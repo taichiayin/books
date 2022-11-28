@@ -7,7 +7,6 @@ export const devRequest = async (req, errorTypes = []) => {
   const axiosCommon = req.headers || {}
   headers['Accept-Language'] = 'zh-tw'
   req.headers = { ...axiosCommon }
-  console.log(`${req.prefix || serviceApiPrefix}${req.url || ''}`)
 
   return defaultRequest.request({
     ...req,

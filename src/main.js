@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 // css reset
 import '@/assets/style/reset.css'
+// icon svg setting
+import '@/assets/icons/index'
 
 Vue.config.productionTip = false
 

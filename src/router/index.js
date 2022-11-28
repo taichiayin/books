@@ -15,6 +15,12 @@ const routes = [
     component: () => import(/* webpackChunkName: "Books" */ '@/views/books.vue')
   },
   {
+    path: '/book/create',
+    name: 'BookCreate',
+    props: (router) => ({ mode: 'add' }),
+    component: () => import(/* webpackChunkName: "BookCreate" */ '@/views/bookDetail.vue')
+  },
+  {
     path: '/books/:id',
     name: 'BookDetail',
     props: (router) => ({ id: router.params.id }),
